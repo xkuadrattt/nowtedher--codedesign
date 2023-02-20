@@ -33,7 +33,7 @@ export default function Header() {
           <nav
             className={`${
               hamburger ? "flex" : "hidden"
-            } absolute bg-primary z-10 top-[3rem] w-full md:w-auto items-center flex-col gap-8 md:gap-0 py-[4rem] md:py-0`}
+            } absolute bg-primary z-40 top-[3rem] w-full md:w-auto items-center flex-col gap-8 md:gap-0 py-[4rem] md:py-0`}
           >
             <ul className="md:static gap-4 lg:gap-8 flex flex-col md:flex-row md:justify-between [&>li>a]:md:block [&>li>a]:md:w-[7rem] [&>li>a]:text-white/40 [&>li>a:hover]:font-semibold [&>li>a:hover]:text-white">
               <li>
