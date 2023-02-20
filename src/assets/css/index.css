@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  position: relative;
+  background-color: #181818;
+}
+
+body::before {
+  content: "";
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  z-index: 2;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #3a3af4 0%,
+    rgba(58, 58, 244, 0) 100%
+  );
+  transform: translate(25%, 45%);
+  opacity: 0.5;
+  filter: blur(10rem);
+}
+
+#root {
+  position: relative;
+  z-index: 4;
+}
+
+#root::before {
+  content: "";
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  z-index: 3;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #3a3af4 0%,
+    rgba(58, 58, 244, 0) 100%
+  );
+  transform: translate(5%, -70%);
+  opacity: 0.5;
+  filter: blur(10rem);
+}
