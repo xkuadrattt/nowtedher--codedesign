@@ -15,11 +15,10 @@ export default function Header() {
     <header className="relative z-10">
       <div className="container mx-auto p-4 sm:px-0 font-primary text-white">
         <div className="flex justify-between md:grid md:grid-cols-headingmd items-center [&>nav]:md:static [&>nav]:md:flex [&>nav]:md:justify-between [&>nav]:md:flex-row [&>nav]:md:bg-transparent">
-          <div className="logo">
-            <a href="/">
-              <img src={logo} alt="logo" className="w-[38px] md:w-[76px]" />
-            </a>
-          </div>
+          <a href="/" className="w-[38px] md:w-[76px]">
+            <img src={logo} alt="logo" />
+          </a>
+
           <button
             onClick={handleHamburger}
             className={`${
@@ -33,7 +32,7 @@ export default function Header() {
           <nav
             className={`${
               hamburger ? "flex" : "hidden"
-            } absolute bg-primary z-40 top-[3rem] w-full md:w-auto items-center flex-col gap-8 md:gap-0 py-[4rem] md:py-0`}
+            } absolute bg-primary/90 top-[3rem] w-full md:w-auto items-center flex-col gap-8 md:gap-0 py-[4rem] md:py-0`}
           >
             <ul className="md:static gap-4 lg:gap-8 flex flex-col md:flex-row md:justify-between [&>li>a]:md:block [&>li>a]:md:w-[7rem] [&>li>a]:text-white/40 [&>li>a:hover]:font-semibold [&>li>a:hover]:text-white">
               <li>
