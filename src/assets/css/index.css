@@ -12,7 +12,7 @@ body::before {
   width: 70%;
   height: 70%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   background: radial-gradient(
     50% 50% at 50% 50%,
     #3a3af4 0%,
@@ -25,7 +25,6 @@ body::before {
 
 #root {
   position: relative;
-  z-index: 4;
 }
 
 #root::before {
@@ -33,7 +32,7 @@ body::before {
   width: 90%;
   height: 90%;
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   background: radial-gradient(
     50% 50% at 50% 50%,
     #3a3af4 0%,
